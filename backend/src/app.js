@@ -4,7 +4,7 @@ const { errors } = require('celebrate')
 const routes = require('./routes')
 
 const app = express()
-
+//Usado somente quando estiver em produção(CORS)
 app.use(cors())
 app.use(express.json())
 app.use(routes)
